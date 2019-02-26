@@ -1,0 +1,326 @@
+@charset "utf-8";
+.cart{
+    border-top: solid 4px #a71b1c;
+}
+.mycart{
+    width: 950px;
+    margin: 0 auto;
+    font-size: 12px;
+    .cart-title{
+        height: 36px;
+        line-height: 36px;
+        padding-top: 10px;
+        @include bgimgurl("http://i0.ulecdn.com/i/global/1px_ce.gif",repeat-x,left,bottom)
+    }
+    .items-store{
+        border: solid 1px #e8e8e8;
+        padding: 0 9px;
+        line-height: 22px;
+    }
+     a:hover{
+        text-decoration: underline;
+    }
+}
+.cart-title{
+    h1{
+        float: left;
+        line-height: 32px;
+        padding: 2px 25px;
+        font-family: "microsoft yahei";
+        color: #000;
+        font-size: 16px;
+        span{
+            color: #c7181d;
+        }
+    }
+    p{
+        float: right;
+        a{
+            display: inline-block;
+            color: #06c;
+            padding-left: 21px;
+            @include bgimgurl("http://i0.ulecdn.com/ule/cart/v3/images/ico_myfavor.png",no-repeat,left,center) 
+        }
+    }
+}
+.cart-head{
+    padding-top:20px ;
+    ul{
+        height: 36px;
+        line-height: 36px;
+        padding: 0 10px;
+        background-color: #f3f3f3;
+    }
+    li{
+        float: left;
+    }
+    li:nth-of-type(1){
+        margin: 4px 5px 0 0;
+    }
+    li:nth-of-type(2){
+        width: 490px;
+    }
+     li:nth-of-type(3){
+        width: 100px;
+    }
+     li:nth-of-type(4){
+        width: 140px;
+    }
+     li:nth-of-type(5){
+        width: 100px;
+    }
+   li:nth-of-type(6){
+        width: 60px;
+    }
+    
+}
+.chk-all,.chk-store{
+    width: 14px;
+    height: 14px;
+}
+.prolist{
+    padding-top: 10px;
+}
+.cart-store{
+    ul{
+        height: 34px;
+        line-height: 34px;
+        padding: 0 10px;
+    }
+    li{
+        float: left;
+    }
+    li:nth-of-type(1){
+        margin: 3px 8px 0 0;
+    }
+    li:nth-of-type(2){
+        padding-left: 21px;
+        @include bgimgurl("http://i0.ulecdn.com/ule/cart/v3/images/icons.png",no-repeat,0,9px);
+       a{
+           font-size: 14px;
+           color: #1475ba;
+       }
+    }
+}
+.items-store ul{
+    @include clearfix();
+    padding: 15px 0;
+    li{
+        float: left;
+    }
+    .proattr{
+        width: 180px;
+        padding:0px 10px;
+        color: #999;
+     }
+     .proprice{
+         width:100px;
+     }
+    .procount{
+        width: 140px;
+    }
+    .prototal{
+        width: 100px;
+        font-family: arial;
+        color: #c42e15;
+        em{
+            font-weight: bold;
+        }
+    }
+   
+}
+ .proinfo{
+     width: 290px;
+     margin-left: 5px;
+    a{
+        float: left;
+    }
+    a:nth-of-type(1) img{
+        display: block;
+        width: 78px;
+        height: 78px;
+        border: solid 1px #eee;
+    }
+    a:nth-of-type(2){
+        width: 190px;
+        margin-left: 10px;
+        height: 44px;
+    }
+    i{
+        width: 16px;
+        height: 16px;
+        float: left;
+        display: block;
+        @include bgimgurl("http://i0.ulecdn.com/ule/cart/v3/images/icons.png",no-repeat,0,-32px);
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+}
+
+.procount{
+    span{
+        float: left;
+        width: 22px;
+        height: 22px;
+        border: solid 1px #ccc;
+        cursor: pointer;
+    }
+    input{
+        float: left;
+        width: 44px;
+        height: 22px;
+        line-height: 22px;
+        padding: 0;
+        text-align: center;
+        border: solid 1px #ccc;
+    }
+    .btn-sub{
+        @include bgimgurl("http://i0.ulecdn.com/ule/cart/v3/images/icons.png",no-repeat,3px,-157px);
+    }
+    .btn-add{
+        @include bgimgurl("http://i0.ulecdn.com/ule/cart/v3/images/icons.png",no-repeat,3px,-141px);
+    }
+}
+.proaction{
+    p{
+       cursor: pointer; 
+       color: #0066CC;
+    }
+    .del{
+        color: #666666;
+    }
+}
+
+.cart-foot{
+    padding: 15px 10px 30px;
+    line-height: 24px;
+    span,a{
+        float: left;
+    }
+    span{
+        input{
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+    a{
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        margin-left: 20px;
+        padding: 0 18px 0 40px;
+        border: solid 1px #bbb;
+        border-radius: 4px;
+    }
+    .pldel{
+        @include bgimgurl("http://i0.ulecdn.com/ule/cart/v3/images/icons.png",no-repeat,19px,-77px);
+    }
+    .alldel{
+         @include bgimgurl("http://i0.ulecdn.com/ule/cart/v3/images/icons.png",no-repeat,19px,-109px);
+    }
+     a:hover{
+        text-decoration:none;
+    }
+}
+.mycart-bar{
+    margin-top: 30px;
+    font-size: 12px;
+    background-color: #f3f3f3;
+    .wrapper{
+        width: 950px;
+        padding: 10px 0;
+        @include clearfix();
+    }
+    dl{
+        float: left;
+        width: 100px;
+        line-height: 20px;
+    }
+    em{
+        margin-right: 3px;
+        font-weight: bold;
+        font-family: arial;
+    }
+    .pro-allprice{
+        width: auto;
+        dd,dt{
+            float: left;
+        }
+        dd{
+            line-height: 40px;
+            color: #c42e15;
+            font-size: 36px;
+        }
+    }
+    p{
+        float: right;
+    }
+    a{
+        float: left;
+        height: 38px;
+        line-height: 38px;
+        font-family: "microsoft yahei";
+        text-align: center;
+        border-radius: 4px;
+    }
+    .btn-continue{
+            border: solid 1px #bbb;
+            width: 98px;
+            margin-right: 10px;
+            font-size: 14px;
+            background: #ffffff;
+    }
+    .btn-ordernow{
+        width: 130px;
+        color: #fff;
+        font-weight: bold;
+        background-color: #d10208;
+        border: solid 1px #a61325;
+        opacity: 0.3;
+        font-size: 18px;
+    }   
+}
+
+//空的购物车的样式
+.empty-cart{
+    padding:20px 0;
+    background-color: #f6f6f6;
+}
+.emmycart{
+    background: #fff;
+    width: 910px;
+    padding: 0 20px;
+}
+.cart-empty{
+    height: 150px;
+    padding: 50px 0 0 435px;
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    @include bgimgurl("http://i0.ulecdn.com/ule/cart/v3/images/bg_empty_919.png",no-repeat,270px,center);
+    p{
+        line-height: 34px;
+        color: #000;
+    }
+    span{
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 5px;
+        width: 116px;
+        line-height: 28px;
+        margin-top: 10px;
+        font-family: "microsoft yahei";
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        background-color: #d10208;
+        border: solid 1px #a71226;
+        border-radius: 3px;
+    }
+    a{
+        color: #06c;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+}

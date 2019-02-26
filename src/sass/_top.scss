@@ -1,0 +1,86 @@
+@charset "utf-8";
+//顶部
+#top{
+    background-color: #f7f7f7;
+    height:29px;
+    padding-top:6px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    font-size: 12px;
+}
+
+.top-left,.top-right{height:22px;line-height:22px;}
+//顶部左边
+.top-left{
+   float:left;
+   a{
+    padding-left: 20px;
+    @include bgimgurl("http://i0.ulecdn.com/ule/header/images/ico_return-home.png",no-repeat,left,center);
+       &:hover{
+           text-decoration: underline;
+       }
+    }
+}
+
+//顶部右边
+.top-right>li>a:hover{
+    text-decoration: underline;
+}
+.top-right{
+   float:right;
+   &>li{
+     position: relative;
+     float:left;
+     padding: 0 12px;
+     height: 27px;
+	 @include bgimgurl("http://i0.ulecdn.com/ule/header/images/header_1407.png");
+	 background-position: -150px 5px;
+	 &:nth-child(2){
+	   &>a{
+	     color: #06c;
+	   }
+	 }
+	 &:nth-child(1){
+	   @include bgimgurl("");
+	 }
+   }
+}
+@for $i from 3 through 5{
+	.top-right>li:nth-of-type(#{$i})>a{
+		@include bgimgurl("http://i0.ulecdn.com/ule/header/images/header_1407.png",no-repeat,right,2px);
+		padding-right: 10px;
+	}
+}
+.top-right>li:nth-of-type(7)>a{
+        @include bgimgurl("http://i0.ulecdn.com/ule/header/images/header_1407.png",no-repeat,right,2px);
+		padding-right: 10px;
+}
+
+//手机邮乐
+.top-right .phoneule{padding-left: 26px;}
+.top-right .shoptype{padding-left: 32px;}
+.ico-phone,.ico-shoptype{
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+   
+}
+.ico-phone{
+   @include bgimgurl("http://i0.ulecdn.com/ule/header/images/header_1407.png");
+}
+.ico-shoptype{
+   @include bgimgurl("http://i0.ulecdn.com/ule/header/images/header_1407.png",no-repeat,-319px,0);
+}
+
+.liphone .phone{
+    display: block;
+    width: 60px;
+    height: 18px;
+    margin-top: 3px;
+    text-indent: -10000px;
+    overflow: hidden;
+    @include bgimgurl("http://i0.ulecdn.com/ule/header/images/header_1407.png",no-repeat, -260px,-25px);
+}

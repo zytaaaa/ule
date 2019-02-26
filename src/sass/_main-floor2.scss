@@ -1,0 +1,129 @@
+@charset "utf-8";
+.main_floor2{
+    margin-top: 0;
+    .m2-section_1,.m2-section_2,.m2-section_3,.m2-section_4,.m2-section_5{
+        margin-bottom: 20px;
+    }
+    .channel-hd{
+        height: 40px;
+        padding-bottom: 1px;
+        margin-right: 2px;
+        border-bottom: 1px solid #ff7b30;
+    }
+    .channel-bd{
+        @include ellipsis();
+    }
+    .bg-main{
+        width: 930px;
+    }
+}
+
+//模块标题
+.channel-hd{
+    a:hover{color: #c52e13;}
+    i{
+        display: inline-block;
+        width: 5px;
+        margin-top: 3px;
+        height: 25px;
+        float: left;
+        background: #ff7b30;
+    }
+    h3{
+        color: #ff7b30;
+        float: left;
+        margin-left: 15px;
+        margin-right: 10px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    p{
+        float: left;
+        margin-top: 12px;
+        line-height: 16px;
+        a{
+            float: left;
+            margin-left: 10px;
+            color: #99999b;
+            font-size: 14px;
+        }
+    }
+    &>a:nth-of-type(1){
+        float: right;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        line-height: 16px;
+        text-indent: -10000px;
+        overflow: hidden;
+        margin: 7px;
+        margin-right: 0;
+        margin-top: 12px;
+        @include bgimgurl("http://i0.ulecdn.com/ule/www/hp/2014/0710/images/sprite_channel3.png",no-repeat,-90px,-158px);
+    }
+    &>a:nth-of-type(2){
+        float: right;
+        margin-top: 12px;
+        line-height: 16px;
+        font-size: 14px;
+        color: #333;
+    }
+}
+
+//模块内容
+//让左右盒子浮动，放在一排
+.channel-bd>.bg-title,.channel-bd>.bg-main{
+    float: left;
+}
+
+//右边盒子
+.bg-main{ 
+    li{
+        float: left;
+        padding: 10px;
+        width: 202px;
+        height: 250px;
+        background: #fff;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        img{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+@for $i from 5 through 8{
+    .bg-main li:nth-of-type(#{$i}){
+        margin-bottom:0px;
+    }
+}
+
+.bg-main li{
+    p:nth-of-type(1){
+        background-color: rgba(255,255,255,0.8);
+        line-height: 17px;
+        height: 17px;
+        overflow: hidden;
+        padding: 0 5px;
+        width: 200px;
+        a{
+            font-size: 14px;
+            display: block;
+            color: #333;
+            @include ellipsis();
+        }
+    }
+    p:nth-of-type(2){
+        margin-top: 8px;
+        line-height: 18px;
+        font-family: "microsoft yahei";
+        text-align: center;
+        span{
+            color: #c52e13;
+             font-size: 18px;
+        }
+    }
+}

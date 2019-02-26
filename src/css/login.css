@@ -1,0 +1,746 @@
+@charset "UTF-8";
+body {
+  color: #666666;
+  font-family: "Tahoma,Arial,Verdana,Simsun";
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+li {
+  list-style: none;
+}
+
+i, b, strong, em, h4 {
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#top {
+  background-color: #f7f7f7;
+  height: 29px;
+  padding-top: 6px;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+  font-size: 12px;
+}
+
+.top-left, .top-right {
+  height: 22px;
+  line-height: 22px;
+}
+
+.top-left {
+  float: left;
+}
+.top-left a {
+  padding-left: 20px;
+  background: url("http://i0.ulecdn.com/ule/header/images/ico_return-home.png") no-repeat left center;
+}
+.top-left a:hover {
+  text-decoration: underline;
+}
+
+.top-right > li > a:hover {
+  text-decoration: underline;
+}
+
+.top-right {
+  float: right;
+}
+.top-right > li {
+  position: relative;
+  float: left;
+  padding: 0 12px;
+  height: 27px;
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat 0 0;
+  background-position: -150px 5px;
+}
+.top-right > li:nth-child(2) > a {
+  color: #06c;
+}
+.top-right > li:nth-child(1) {
+  background: url("") no-repeat 0 0;
+}
+
+.top-right > li:nth-of-type(3) > a {
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat right 2px;
+  padding-right: 10px;
+}
+
+.top-right > li:nth-of-type(4) > a {
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat right 2px;
+  padding-right: 10px;
+}
+
+.top-right > li:nth-of-type(5) > a {
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat right 2px;
+  padding-right: 10px;
+}
+
+.top-right > li:nth-of-type(7) > a {
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat right 2px;
+  padding-right: 10px;
+}
+
+.top-right .phoneule {
+  padding-left: 26px;
+}
+
+.top-right .shoptype {
+  padding-left: 32px;
+}
+
+.ico-phone, .ico-shoptype {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 4px;
+}
+
+.ico-phone {
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat 0 0;
+}
+
+.ico-shoptype {
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat -319px 0;
+}
+
+.liphone .phone {
+  display: block;
+  width: 60px;
+  height: 18px;
+  margin-top: 3px;
+  text-indent: -10000px;
+  overflow: hidden;
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat -260px -25px;
+}
+
+.sub-right {
+  width: 100%;
+  position: absolute;
+  top: 22px;
+  left: -1px;
+  padding: 5px 0;
+  border: solid 1px #d9d9d9;
+  border-top: 0;
+  background-color: #fff;
+  z-index: 9999;
+  display: none;
+}
+.sub-right a {
+  display: block;
+  background-color: #fff;
+  padding-left: 12px;
+  height: 28px;
+  line-height: 28px;
+}
+
+.top-right > .top-hover:hover {
+  border: 1px solid #D9D9D9;
+  margin-bottom: 0;
+  background: #fff;
+  margin: -1px;
+  z-index: 3;
+}
+.top-right > .top-hover:hover > a {
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat right -18px;
+}
+.top-right > .top-hover:hover .sub-right {
+  display: block;
+}
+.top-right .liphone:hover .phonetip {
+  display: block;
+}
+
+.sub-right li > a:hover {
+  background-color: #f7f7f7;
+  color: #c51010;
+}
+
+.phoneule .sub-right {
+  width: 180px;
+  left: 50%;
+  margin-left: -90px;
+  border-radius: 8px;
+  padding: 10px 0;
+  height: 163px;
+}
+.phoneule .sub-right img {
+  display: block;
+  margin: 0 auto;
+}
+
+.phonetip {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 18px;
+  width: 134px;
+  height: 28px;
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat -130px -136px;
+}
+
+.allCategory {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: #FFF;
+  position: fixed;
+  top: 35px;
+  left: 0px;
+  border: 1px solid #D9D9D9;
+  padding: 0px 0px 15px;
+  z-index: 9999;
+  overflow: hidden;
+}
+.allCategory .wrapper {
+  position: relative;
+}
+.allCategory ul {
+  width: 1270px;
+}
+.allCategory li {
+  width: 255px;
+  margin: 15px 60px 0 0;
+  float: left;
+  line-height: 27px;
+}
+.allCategory a:hover {
+  color: #c51010;
+}
+
+.allCategory li h4 {
+  border-bottom: 1px solid #D9D9D9;
+  font-size: 14px;
+  font-family: 'microsoft yahei';
+}
+.allCategory li h4:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.allCategory li h4 a:nth-of-type(1) {
+  color: #666;
+  font-weight: 600;
+  float: left;
+}
+.allCategory li h4 a:nth-of-type(2) {
+  background: url("http://i0.ulecdn.com/ule/header/images/sprite_topcate.png") no-repeat right 0;
+  float: right;
+  text-indent: -9999px;
+  margin: 7px 0 0;
+  width: 12px;
+  height: 12px;
+}
+.allCategory li h4:hover > a {
+  color: #c51010;
+}
+.allCategory li h4:hover > a:nth-of-type(2) {
+  background: url("http://i0.ulecdn.com/ule/header/images/sprite_topcate.png") no-repeat right -12px;
+}
+
+.shoptypes {
+  width: 275px;
+  overflow: hidden;
+  line-height: 22px;
+}
+.shoptypes a {
+  color: #666;
+  float: left;
+  margin-right: 20px;
+  font-family: Tahoma,"ç€¹å¬©ç¶‹";
+}
+
+.allCategory_main > p {
+  font-family: Tahoma,"ç€¹å¬©ç¶‹";
+  background: url("http://i0.ulecdn.com/ule/header/images/sprite_topcate.png") no-repeat left -60px;
+  width: 278px;
+  height: 75px;
+  position: absolute;
+  bottom: 15px;
+  right: -22px;
+}
+.allCategory_main > p a {
+  float: left;
+  padding-top: 55px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 21px 0 0;
+  width: 48px;
+}
+
+.top-right .shoptype:hover {
+  margin-top: -6px;
+  padding-top: 6px;
+  margin-right: -1px;
+  padding-right: 13px;
+  height: 29px;
+  line-height: 22px;
+  z-index: 200;
+  border-bottom: none;
+  margin-bottom: 0;
+  background: #fff;
+}
+.top-right .shoptype:hover span {
+  top: 10px;
+}
+.top-right .shoptype:hover > a {
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat right -18px;
+}
+.top-right .shoptype:hover .allCategory {
+  display: block;
+}
+
+header {
+  padding: 12px 0;
+  font-size: 12px;
+}
+header:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.head-logo {
+  overflow: hidden;
+  float: left;
+  background: url("../img/logo.png") no-repeat left bottom;
+}
+.head-logo a {
+  text-indent: -9999px;
+  display: block;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+}
+
+.head-shopcar {
+  position: relative;
+  float: right;
+  position: relative;
+  margin-top: 10px;
+  width: 158px;
+  height: 34px;
+  border: 1px solid #bdbdbd;
+  background-color: #fff;
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat 0 -86px;
+}
+.head-shopcar > span {
+  padding-left: 31px;
+  line-height: 33px;
+  cursor: pointer;
+}
+.head-shopcar > span > i {
+  right: 20px;
+  top: 0;
+  color: #900;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial,Helvetica,sans-serif;
+  position: absolute;
+  width: 58px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.head-serch {
+  float: right;
+  margin-right: 216px;
+  margin-top: 10px;
+  position: relative;
+}
+.head-serch form:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.head-serch input {
+  float: left;
+  width: 447px;
+  border: solid 3px #c7181d;
+  border-right: 0;
+  padding: 0 5px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  font-size: 14px;
+  box-sizing: content-box;
+}
+.head-serch button {
+  float: left;
+  width: 73px;
+  height: 36px;
+  background: url("http://i0.ulecdn.com/ule/header/images/header_1407.png") no-repeat -370px -46px;
+  text-indent: -9999px;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+}
+.head-serch > p {
+  line-height: 18px;
+  margin-top: 5px;
+  height: 18px;
+  overflow: hidden;
+  padding: 0;
+}
+.head-serch > p a {
+  margin-right: 3px;
+  white-space: nowrap;
+}
+.head-serch a:hover {
+  text-decoration: underline;
+}
+
+.head-serch > p > a:nth-of-type(1) {
+  color: #c51010;
+}
+
+.head-serch > p > a:nth-of-type(2) {
+  color: #c51010;
+}
+
+.head-cart {
+  float: right;
+  margin-top: 20px;
+  display: none;
+}
+.head-cart p {
+  background: url("http://i0.ulecdn.com/ule/header/images/cart_tit_new.png?v201402101030") no-repeat 0 0;
+  width: 570px;
+  height: 35px;
+}
+
+.searchconten {
+  width: 458px;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  padding: 0;
+  border: solid 1px #dfdfdf;
+  background: #fff;
+  box-shadow: 1px 1px 3px #dfdfdf;
+  -webkit-box-shadow: 1px 1px 3px #dfdfdf;
+}
+.searchconten li {
+  padding: 3px 8px 4px 8px;
+  line-height: 26px;
+  cursor: pointer;
+  margin: 0;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+.searchconten li:hover {
+  background: #F3F3F3;
+}
+.searchconten a {
+  width: 80%;
+  float: left;
+}
+.searchconten a:hover {
+  color: #C52E15;
+  font-weight: 700;
+  text-decoration: none;
+}
+.searchconten span {
+  float: right;
+  color: #999;
+}
+
+.capyheader {
+  display: none;
+  position: fixed;
+  top: 0;
+  background: url("http://i0.ulecdn.com/ule/common/css/images/zjl_icon_001.png");
+  width: 100%;
+  height: 41px;
+  overflow: hidden;
+  padding: 5px 0;
+  z-index: 9999;
+}
+.capyheader .head-logo {
+  background: url("http://i0.ulecdn.com/ule/common/css/images/zjl_icon_002.png");
+  width: 54px;
+  height: 40px;
+}
+.capyheader .head-logo a {
+  height: 100%;
+}
+.capyheader .head-serch {
+  margin-top: 0;
+  margin-right: 376px;
+}
+
+.login {
+  font-size: 12px;
+  width: 100%;
+  border-top: 4px solid #c7181d;
+}
+.login .wrapper {
+  height: 495px;
+  background: url("https://pic1.ulecdn.com/item/user_0102/desc20190211/69624389a5ef2ab0_-1x-1.png") no-repeat center center;
+  position: relative;
+}
+.login .wrapper .login-box {
+  position: absolute;
+  width: 332px;
+  background-color: #FFF;
+  border-radius: 3px;
+  top: 12px;
+  box-shadow: #999 0px 0px 2px;
+  height: 468px;
+  right: 125px;
+  border: 1px solid #FFF;
+}
+
+.login-box {
+  position: relative;
+}
+.login-box > div {
+  margin-bottom: 20px;
+}
+.login-box .lg-title {
+  font-family: "microsoft yahei";
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 18px 0 26px 15px;
+  display: block;
+}
+.login-box .lg {
+  position: relative;
+}
+.login-box .lg-poe > i {
+  background: url("https://i0.ulecdn.com/i/login/2015/0415/login_icons.png") no-repeat 0 -85px;
+}
+.login-box .lg-pass > i {
+  background: url("https://i0.ulecdn.com/i/login/2015/0415/login_icons.png") no-repeat 0 -117px;
+}
+.login-box > input {
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+  background: none;
+  width: 302px;
+  color: #fff;
+  border: 1px solid #a71427;
+  background-color: #d10208;
+  height: 38px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 3px;
+  font-family: "microsoft yahei";
+  font-size: 16px;
+}
+.login-box .noreg {
+  padding: 10px 14px 0 0;
+  float: right;
+}
+.login-box .noreg a {
+  color: #03c;
+}
+.login-box .erweima {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  background: url("https://i0.ulecdn.com/i/login/2015/0925/icon_zjl_001.png") no-repeat 0 0;
+}
+
+.lg i {
+  position: absolute;
+  display: block;
+  height: 38px;
+  width: 23px;
+  left: 21px;
+  top: 0;
+}
+.lg input {
+  width: 277px;
+  height: 18px;
+  line-height: 18px;
+  padding: 10px 0 10px 23px;
+  border: 1px solid #cacaca;
+  font-size: 14px;
+  margin: 0 0 0 15px;
+  color: #999;
+  text-indent: 5px;
+}
+
+.lg-help {
+  width: 309px;
+  padding: 0 0 20px 12px;
+  position: relative;
+  line-height: 20px;
+}
+.lg-help input, .lg-help label, .lg-help i {
+  float: left;
+}
+.lg-help label {
+  color: #656567;
+}
+.lg-help i {
+  height: 12px;
+  width: 12px;
+  text-indent: -999px;
+  overflow: hidden;
+  background: url("https://i0.ulecdn.com/i/login/2013/0529/icons.png") no-repeat -29px -36px;
+  margin: 4px 0 0 4px;
+  cursor: pointer;
+}
+.lg-help span {
+  float: right;
+}
+.lg-help span a {
+  color: #03c;
+}
+
+.login-method {
+  width: 317px;
+  padding-left: 15px;
+  text-align: left;
+  background-color: #FFFFFF;
+  padding-top: 15px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.login-method > span {
+  display: block;
+  color: #999999;
+  line-height: 30px;
+}
+.login-method > a {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 24px;
+  background: url("https://i0.ulecdn.com/i/login/2015/0415/links_icon.png") no-repeat 0 0;
+}
+.login-method > a:nth-of-type(3) {
+  width: 70px;
+}
+
+.login-method > a:nth-of-type(1) {
+  background-position: 0px 0px;
+}
+
+.login-method > a:nth-of-type(2) {
+  background-position: -59px 0px;
+}
+
+.login-method > a:nth-of-type(3) {
+  background-position: -118px 0px;
+}
+
+.login-method .weixin {
+  float: right;
+  background: none;
+}
+.login-method .weixin img {
+  width: 37px;
+  height: 32px;
+  margin: 0 auto;
+  border: 0;
+  display: block;
+  border-radius: 3px;
+}
+.login-method .weixin b {
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  display: block;
+  font-weight: 400;
+}
+
+footer {
+  padding: 20px 0px;
+  font-size: 12px;
+  background-color: white;
+}
+footer .wrapper > p {
+  line-height: 20px;
+  color: #999;
+  font-family: verdana;
+}
+footer .foot-banner {
+  height: 56px;
+  border: solid 1px #ddd;
+  border-width: 1px 0;
+  padding: 17px 0;
+  background: url("http://i0.ulecdn.com/ule/header/images/footer1603.png?t=1") no-repeat 0 -125px;
+}
+footer .font-link {
+  height: 34px;
+  margin-top: 15px;
+  background: url("http://i0.ulecdn.com/ule/header/images/footer1603.png?t=1") no-repeat 0 0;
+}
+footer .foot-helper {
+  padding: 10px 0 20px;
+  text-align: left;
+  overflow: hidden;
+  width: 100%;
+}
+footer .foot-helper > ul {
+  width: 1300px;
+}
+footer .foot-license {
+  line-height: 20px;
+  padding: 15px 0 5px;
+  text-align: center;
+  color: #999;
+  border-top: solid 1px #ddd;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.foot-license li {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 9px;
+  font-family: "microsoft yahei";
+}
+
+.foot-helper li {
+  width: 120px;
+  padding: 5px 96px 0 0;
+  float: left;
+}
+.foot-helper li h4 {
+  color: #666;
+  line-height: 22px;
+  margin: 0 0 5px;
+  border-bottom: dotted 1px #ccc;
+  font-weight: 700;
+}
+.foot-helper li p > a {
+  display: block;
+  line-height: 22px;
+  color: #888;
+}
+
+/*# sourceMappingURL=login.css.map */

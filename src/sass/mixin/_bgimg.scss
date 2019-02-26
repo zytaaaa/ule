@@ -1,0 +1,5 @@
+//背景图片地址
+
+@mixin bgimgurl($imgurl,$rept:no-repeat,$left:0,$top:0){
+    background:url($imgurl) $rept $left $top;
+}

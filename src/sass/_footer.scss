@@ -1,0 +1,68 @@
+@charset "utf-8";
+footer{
+    padding: 20px 0px;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    .wrapper>p{
+        line-height: 20px;
+        color: #999;
+        font-family: verdana;
+    }
+   .foot-banner{
+        height: 56px;
+        border: solid 1px #ddd;
+        border-width: 1px 0;
+        padding: 17px 0;
+        @include bgimgurl("http://i0.ulecdn.com/ule/header/images/footer1603.png?t=1",no-repeat,0,-125px);
+   } 
+   .font-link{
+       height: 34px;
+       margin-top: 15px;
+       @include bgimgurl("http://i0.ulecdn.com/ule/header/images/footer1603.png?t=1");
+   }
+   .foot-helper{
+       padding: 10px 0 20px;
+        text-align: left;
+        overflow: hidden;
+        width: 100%;
+        &>ul{
+            width: 1300px;
+        }
+   }
+   .foot-license{
+        line-height: 20px;
+        padding: 15px 0 5px;
+        text-align: center;
+        color: #999;
+        border-top: solid 1px #ddd;
+   }
+   a:hover{
+       text-decoration: underline;
+   }
+}
+
+.foot-license li{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 9px;
+    font-family: "microsoft yahei";
+}
+
+.foot-helper li{
+    width: 120px;
+    padding: 5px 96px 0 0;
+    float: left;
+    h4{
+        color: #666;
+        line-height: 22px;
+        margin: 0 0 5px;
+        border-bottom: dotted 1px #ccc;
+        font-weight: 700;
+    }
+    p>a{
+        display: block;
+        line-height: 22px;
+        color: #888;
+    }
+}

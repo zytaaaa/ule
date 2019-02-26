@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+.login{
+    font-size: 12px;
+    width: 100%;
+    border-top: 4px solid #c7181d;
+    .wrapper{
+        height: 495px;
+        @include bgimgurl("https://pic1.ulecdn.com/item/user_0102/desc20190211/69624389a5ef2ab0_-1x-1.png",no-repeat,center,center);
+        position: relative;
+        .login-box{
+            position:absolute;
+            width: 332px;
+            background-color: #FFF;
+            border-radius: 3px;
+            top: 12px;
+            box-shadow: #999 0px 0px 2px;
+            height: 468px;
+            right:125px;
+            border: 1px solid #FFF;
+        }
+    }
+}
+
+.login-box{
+    position: relative;
+    &>div{
+        margin-bottom: 20px;
+    }
+    .lg-title{
+        font-family: "microsoft yahei";
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin: 18px 0 26px 15px;
+        display: block;
+    }
+    .lg{
+        position: relative;
+    }
+    .lg-poe>i{
+        @include bgimgurl("https://i0.ulecdn.com/i/login/2015/0415/login_icons.png",no-repeat,0,-85px);
+    }
+    .lg-pass>i{
+        @include bgimgurl("https://i0.ulecdn.com/i/login/2015/0415/login_icons.png",no-repeat,0,-117px);
+    }
+    &>input{
+            padding: 0;
+            margin: 0;
+            margin-left: 15px;
+            background: none;
+            width: 302px;
+            color: #fff;
+            border: 1px solid #a71427;
+            background-color: #d10208;
+            height: 38px;
+            line-height: 36px;
+            text-align: center;
+            border-radius: 3px;
+            font-family: "microsoft yahei";
+            font-size: 16px;
+    }
+    .noreg{
+         padding: 10px 14px 0 0;
+        float: right;
+        a{
+            color: #03c;
+        }
+     }
+     .erweima{
+            position: absolute;
+            right: -1px;
+            top: -1px;
+            height: 70px;
+            width: 70px;
+            cursor: pointer;
+            @include bgimgurl("https://i0.ulecdn.com/i/login/2015/0925/icon_zjl_001.png");//二维码的图，页面点击图片发生变化，需要改变背景图的定位
+     }
+}
+.lg{
+    i{
+        position: absolute;
+        display: block;
+        height: 38px;
+        width: 23px;
+        left: 21px;
+        top: 0;
+    }
+    input{
+        width: 277px;
+        height: 18px;
+        line-height: 18px;
+        padding: 10px 0 10px 23px;
+        border: 1px solid #cacaca;
+        font-size: 14px;
+        margin: 0 0 0 15px;
+        color: #999;
+        text-indent: 5px;
+    }
+    
+}
+
+.lg-help{
+    width: 309px;
+    padding: 0 0 20px 12px;
+    position: relative;
+    line-height: 20px;
+    input,label,i{
+        float: left;
+    }
+    label{
+       color: #656567;
+    }
+    i{
+        height: 12px;
+        width: 12px;
+        text-indent: -999px;
+        overflow: hidden;
+        @include bgimgurl("https://i0.ulecdn.com/i/login/2013/0529/icons.png",no-repeat,-29px,-36px);
+        margin: 4px 0 0 4px;
+        cursor: pointer;
+    }
+    span{
+        float: right;
+        a{
+            color: #03c;
+        }
+    }
+}
+
+
+.login-method{
+    width: 317px;
+    padding-left: 15px;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding-top: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    &>span{
+        display: block;
+        color: #999999;
+        line-height: 30px;
+    }
+    &>a{
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 24px;
+        @include bgimgurl("https://i0.ulecdn.com/i/login/2015/0415/links_icon.png");
+    }
+    &>a:nth-of-type(3){
+        width:70px;
+    }
+}
+@each $i,$j in (1,0px),(2,-59px),(3,-118px){
+    .login-method>a:nth-of-type(#{$i}){
+        background-position:$j 0px;
+    }
+}
+
+.login-method .weixin{
+    float: right;
+    background:none;
+    img{
+        width: 37px;
+        height: 32px;
+        margin: 0 auto;
+        border: 0;
+        display: block;
+        border-radius: 3px;
+    }
+    b{
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        display: block;
+        font-weight: 400;
+    }
+}

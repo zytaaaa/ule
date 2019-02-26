@@ -1,0 +1,113 @@
+
+@charset "utf-8";
+.regis{
+    border-top: 4px solid #c7181d;
+    background: #f7f7f7;
+    padding: 20px 0;
+    font-family: Microsoft YaHei;
+    .wrapper{
+        width: 920px;
+        background: #fff;
+        padding: 30px 15px 0 15px;
+         height: 500px;
+    }
+    .item{
+        margin-top: 25px;
+        height: 40px;
+        position: relative;
+    }
+    .reg-btn{
+        margin-top: 0px;
+    }
+
+}
+.reg-title{
+    border-bottom: 1px solid #f0f0f0;
+    @include bgimgurl("https://i0.ulecdn.com/i/login/2016/0808/title_tip.jpg",no-repeat,center,right);
+    &>div{
+        width: 138px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 16px;
+        color: #333;
+        border: 1px solid #f0f0f0;
+        border-bottom: 0px;
+        margin-left: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+.reg-main{
+    padding-left: 220px;
+   form>div{
+        line-height: 40px;
+        font-size: 14px;
+        color: #999;
+        lable{
+            display: block;
+            width: 70px;
+            height: 40px;
+            float: left;
+        }
+        input{
+            width: 298px;
+            height: 38px;
+            line-height: 38px;
+            padding: 0 10px;
+            border: 1px solid #cacaca;
+            color: #333;
+            font-size: 14px;
+       }
+   }
+}
+
+
+.yzm{
+    label,.code-input,.imgbtn,span{
+        float: left;
+    }
+    .code-input>input{
+        width: 140px;
+        @include ellipsis();
+        background: #eee;
+    }
+    .imgbtn{
+        margin-left: 18px;
+        img{
+             width: 120px;
+            height: 40px;
+            margin-right: 0;
+            cursor: pointer;
+        }
+    }
+}
+.agree{
+    position: relative;
+    i{
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        cursor: pointer;
+        @include bgimgurl("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg",no-repeat,-115px,-339px);
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    span{
+        position:absolute;
+        top: -13px;
+       color: #AEAEAE;
+       a{
+           color: #03c;
+       } 
+    }
+    
+}
+
+.reg-btn{
+    a{
+        display: inline-block;
+        @include bgimgurl("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg",no-repeat,0,-141px);
+        height: 40px;
+        width: 350px;
+    }
+}

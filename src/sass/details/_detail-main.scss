@@ -1,0 +1,365 @@
+@charset "utf-8";
+#store-main{
+    a:hover{
+        text-decoration:underline;
+    }
+}
+.main-top{
+    @include clearfix();
+    font-size: 12px;
+    padding-top:10px;
+    &>a,&>span{
+        float: left;
+    }
+    &>a{
+        color: #0066CC;
+    }
+    &>span{
+        margin:0 5px 0;
+    }
+}
+
+.goods-main{
+    font-size: 12px;
+    border: 1px solid #e9e9e9;
+    margin-top: 10px;
+    @include clearfix();
+}
+.fdj{
+    position: relative;
+    width: 398px;
+    margin: 20px 20px 0;
+    float: left;
+    .spic{
+        width: 398px;
+        height: 398px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+    .bf{
+        display: none;
+        width: 398px;
+        height: 398px;
+        position:absolute;
+        left: 398px;
+        top: 0;
+        z-index:99;
+        overflow: hidden;
+        img{
+            position: absolute;
+            left: -235px;
+            top: -61px;
+        }
+    }
+}
+.ulist{
+    ul{
+     @include clearfix(); 
+    }
+    li{
+        width: 76px;
+        height: 62px;
+        text-align: center;
+        float: left;
+        img{
+            width: 56px;
+            height: 56px;
+            border: 1px solid #e7e7e7;
+            padding: 2px;
+        }
+    }
+}
+
+
+.proInfo{
+    float: left;
+    padding-right: 20px;
+    position: relative;
+    line-height: 22px;
+    width: 573px;
+    border-right: 1px solid #e9e9e9;
+    h1{
+        font-size: 16px;
+        color: #333;
+        padding-top: 18px;
+        font-family: 'Microsoft YaHei';
+    }
+    h2{
+        font-weight:100;
+        padding-top: 2px;
+    }
+    .prodetail{
+        margin-top: 10px;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+    //选中加sub标签
+    sub{
+        position: absolute;
+        right:-1px;
+        bottom: 0;
+        width: 14px;
+        height: 14px;
+        text-indent: -9999px;
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2014/0730/selected.png");
+    }
+}
+
+.prodetail{
+    dl{
+        @include clearfix();
+        dd,dt{float: left;}
+        dt{
+            width: 58px;
+        }
+    }
+    .proid{
+        height: 20px;
+        line-height: 20px;
+        padding: 10px 0;
+    }
+    &>div{
+        position: absolute;
+        top: 4px;
+        right: 0;
+        z-index: 101;
+        overflow: hidden;
+    }
+    
+}
+.proprice{
+   dt{
+       padding-top: 16px;
+   }
+   dd{
+       padding-top:14px;
+       color: #c52e15;
+       font-weight:700;
+       line-height: 20px;
+       position: relative;
+       span{
+           font-size:28px;
+       }
+       strong{
+           font-weight:700;
+           font-size:30px;
+       }
+       del{
+           font-size: 15px;
+            padding-left: 8px;
+            color: #999;
+            font-weight: normal;
+       }
+       i{
+           width: 14px;
+            height: 16px;
+            display:inline-block;
+            margin-left: 5px;
+           @include bgimgurl("http://i0.ulecdn.com/j/app/vi/2017/0919/common/icon.png"); 
+       }
+       .font{
+            width:178px;
+            line-height:20px;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #2196f3;
+            position: absolute;
+            left:175px;
+            top:2px;
+            color: #2196f3;
+            box-shadow: 1px 2px 5px #999;
+            z-index:99;
+            display:none;
+       }
+   }    
+}
+.proprice dd{
+    &>i{
+        &:hover{
+            .font{
+                display: block;
+            }
+        }
+    }
+    .font i{
+        @include bgimgurl("http://i0.ulecdn.com/j/app/vi/2017/0919/common/icon.png",no-repeat,-24px,0); 
+        width: 4px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+        left: -10px;
+        margin-top: -3px;
+    }
+    
+}
+.prosend{
+    padding-top: 8px;
+    dd{
+        height: 22px;
+        p{
+          float: left;  
+        }
+        p:nth-of-type(1){
+           color: #999;
+            margin-right: 10px;
+        }
+        span{
+            color: #666;
+            padding-right: 10px;
+        }
+        p:nth-of-type(2){
+            line-height: 20px;
+            height: 20px;
+            margin: 0 20px 0 8px;
+            @include ellipsis();
+            width: 150px;
+            position: relative;
+            border: 1px solid #CCCCCC;
+            box-shadow: 1px 1px 1px #E6E1E6 inset;
+            margin-bottom: -1px;
+            cursor: pointer;
+            background-color: #fff;
+        }
+    }
+}
+.prosend dd p:nth-of-type(2) i{
+    position: absolute;
+    width: 19px;
+    height:18px;
+    right: 1px;
+    top: 1px;
+   @include bgimgurl("http://i0.ulecdn.com/i/event/2016/0105/zjl_icon_area.png",no-repeat,-24px,8px); 
+    
+}
+.proservice{
+    dd{
+        color: #999;
+        line-height: 20px;
+        a{
+            color: #e6393b;
+           padding: 0 4px;
+        } 
+    }
+}
+.guige{
+   padding: 5px 0 8px;
+   li{
+       float: left;
+       padding: 0 10px 7px 0;
+       a{
+           margin: -1px;
+            border: 2px solid #A71F24;
+            display: block;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            padding: 0 8px;
+            position: relative;
+       }
+   }
+}
+#store-main .guige,#store-main .purchase{
+    a:hover{
+        text-decoration: none;
+    }
+}
+.num{
+    .prosub{
+        background-color: rgb(241, 241, 241);
+        border-right: none;
+    }
+    .proadd{
+        border-left: none;
+    }
+    .prosub,.proadd{
+        display: block;
+        float: left;
+        width: 24px;
+        height: 24px;
+        border: solid 1px #999;
+        text-align: center;
+        line-height: 24px;
+        font-family: Arial;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    input{
+        width: 48px;
+        display: block;
+        float: left;
+        font-family: Arial;
+        text-align: center;
+        height: 24px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #999;
+        font-size: 14px;
+    }
+    .kucun{
+        margin-left: 10px;
+        line-height: 26px;
+    }
+    
+}
+.prochoose{
+   margin-top: 5px;
+   line-height: 30px;
+   dd{
+        color: #B30808;
+        font-weight:800;
+        em{
+             font-weight:800;
+        }
+   }
+}
+.purchase{
+    border-top: 1px dotted #ccc;
+    padding: 33px 0 12px 58px;
+    @include clearfix();
+    a{
+       float: left;
+       text-indent: -999em;
+       height: 40px;
+       margin-right: 10px;
+    }
+    .btn_exchange{
+        width: 128px;
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2016/0316/zjl_icon_002.png");
+    }
+    .btn_add2cart{
+        width: 148px;
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2016/0316/zjl_icon_002.png",no-repeat,-129px,0);
+    }
+    .bth-col{
+        width: 76px;
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2016/0316/zjl_icon_002.png",no-repeat,-278px,0);
+    }
+}
+.goods_bottom{
+    border-top: 1px dotted #ccc;
+    margin-top: 21px;
+    color: #b4b4b4;
+    line-height: 26px;
+    p:nth-of-type(1){
+        padding-top: 8px;
+    }
+    p:nth-of-type(2){
+        span{
+            color: #666;
+            display: inline-block;
+            margin-left:20px;
+            padding: 2px 0 0px 20px;
+            @include bgimgurl("http://i0.ulecdn.com/i/vi/2015/0407/seven-day.png",no-repeat,0,5px);
+        }
+    }
+}
+
+

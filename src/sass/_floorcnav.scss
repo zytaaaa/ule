@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+//左边楼梯导航
+#floatTool{
+    font-size: 12px;
+    position: fixed;
+    left: 109.6px;
+    bottom: 25px;
+    li{
+        height: 32px;
+        padding: 10px 0;
+        width: 32px;
+        overflow: hidden;
+        border-bottom: 1px dotted #CCCCCC;
+        text-align: center;
+        cursor: pointer;
+        
+    }
+    span{
+        line-height: 14px;
+        height: 31px;
+        color: #999;
+        font-family: verdana;
+        background-color: #f3f4f6;
+        border-radius: 4px;
+        display:block;
+   }
+   .last{
+       border-bottom:0;
+       @include bgimgurl("http://i0.ulecdn.com/ule/www/hp/2014/0710/images/returntop2.png",no-repeat,3px,8px);
+   }
+   label{
+        display:none;
+        padding-top: 3px;
+        background-color: #ff7b30;
+        line-height: 14px;
+        height: 28px;
+        padding: 2px 0;
+        color: #fff;
+        cursor: pointer;
+       border-radius: 4px;
+       position: relative;
+   }
+   .f2 label{
+        background-color: #1bb145;
+   }
+   .f3 label{
+       background-color: #2289ff;
+   }
+   .f4 label{
+        background-color: #010101;
+   }
+   .f5 label{
+       background-color: #ff2f91;
+   }
+}
+
+

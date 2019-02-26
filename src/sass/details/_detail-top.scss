@@ -1,0 +1,245 @@
+@charset "utf-8";
+#storeheader{
+    font-size: 12px;
+    background: #a71b1b;
+    border-top: 1px solid #7A090B;
+    @include clearfix();
+    line-height: 36px;
+     height: 36px;
+    .storeHeadInfo,.connect{
+        float: left;
+    }
+    .storeHeadInfo{
+        position: relative;
+    }
+    .connect{
+        padding:8px 0 0 10px;
+    }
+    .head-shopcart{
+        float: right;
+        padding-right: 165px;
+        position: relative;
+    }
+}
+.storeHeadInfo{
+    &:hover{
+        cursor: pointer;
+        background-color: #c70003;
+        border-left: 1px solid #9C0003;
+        border-right: 1px solid #9C0003;
+        .storeHeadmain{
+            display: block;
+        }
+        .line{
+            display: none;
+        }
+        .daxing>em{
+             @include bgimgurl("http://i0.ulecdn.com/i/vi/2013/1217/storettbg.png?v=131119",no-repeat,25px,-26px);
+        }
+    }
+    .line{
+        background: #881210;
+        width: 1px;
+        height: 18px;
+        line-height: 0;
+        overflow: hidden;
+        margin-top: 10px;
+        float: left;
+    }
+    &>a{
+        float: left;
+        padding: 0 10px;
+        overflow: hidden;
+        color: #fff;
+        font-family: "微软雅黑";
+        font-size: 16px;  
+    }
+    .daxing{
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2013/1217/ratestar2.png",no-repeat,left,center);
+        float: left;
+        width: 100px;
+        height: 36px;
+        line-height: 36px;
+        position: relative;
+        em{
+            @include bgimgurl("http://i0.ulecdn.com/i/vi/2013/1217/storettbg.png?v=131119",no-repeat,25px,8px);
+            position: absolute;
+            right: 0;
+            font-style: normal;
+            top: 0;
+            padding-right: 25px;
+            color: #fff;
+        }
+    }
+    
+}
+
+.connect{
+    span{
+        display: block;
+        width: 77px;
+        height: 20px;
+        @include bgimgurl("http://i0.ule.com/app/livechat/v1/css/button/btn_service_online.gif");
+    }
+}
+
+.head-shopcart{
+    .storehead-fastlink{
+        position: relative;
+        float: left;
+        line-height: 29px;
+        height: 30px;
+        padding-top: 6px;
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2013/1217/storettbg.png",no-repeat,0,-104px);
+    }
+    .shopcart{
+        float: right;
+    }
+    .shopcart{
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2013/1217/bg_shopcart.png",no-repeat,right,top);
+        height: 41px;
+        color: #fff;
+        width: 153px;
+        display: inline;
+        position: absolute;
+        right: 0;
+        top: -6px;
+    }
+}
+.shouchang{
+        float: left;
+        padding-left: 30px;
+        height: 24px;
+        line-height: 24px;
+        color: #fcc;
+}
+
+.shopcart span{
+    display: inline-block;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 41px;
+    padding-top:4px;
+    color: #fff;
+    font-weight: normal;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: left;
+    i{
+        font-size: 16px;
+        position: absolute;
+        right: 20px;
+        height: 30px;
+        width: 58px;
+        text-align: center;
+        top: 5px;
+    }
+}
+
+//划过显示
+.storeHeadmain{
+    display: none;
+    position: absolute;
+    border: 1px solid #9C0003;
+    border-top: none;
+    width: 288px;
+    top: 36px;
+    left: -1px;
+    color: #656565;
+    background: #fff;
+    z-index:20;
+    padding: 15px;
+    .storepingfen{
+        float: left;
+        overflow: hidden;
+        padding-bottom: 8px;
+        border-bottom: 1px dotted #ABABAB;
+    }
+    .storeView{
+        float: left;
+        padding: 15px 0;
+    }
+}
+.storepingfen{
+    h4{
+        font-size: 14px;
+        line-height: 18px;
+        color: #323232;
+        font-family: "微软雅黑";
+        height: 24px;
+        margin-right: 10px;
+        span{
+            color: #DD4434;
+            font-size: 16px;
+            padding-left: 4px;
+        }
+    }
+    dl{
+        float: left;
+        width: 72px;
+       line-height: 22px;
+        dt{
+           color: #686868;
+        }
+        dd{
+            font-weight: bold;
+        }
+    }
+    
+}
+.storeView{
+    a{
+        display: block;
+        float: left;
+        background: #F8822B;
+        width: 77px;
+        height: 22px;
+        line-height: 20px;
+        text-align: center;
+        border: 1px solid #D45B16;
+        color: #fff;
+    }
+    span{
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2014/0328/addfav2.jpg", no-repeat,0,center);
+        line-height: 20px;
+        cursor: pointer;
+        float: left;
+        width: 52px;
+        margin-left: 20px;
+        padding-left: 20px;
+        color: #666;
+    }
+}
+
+.shouchang{
+    &>em{
+        width: 15px;
+        height: 7px;
+        display: block;
+        @include bgimgurl("http://i0.ulecdn.com/i/vi/2013/1217/storettbg.png",no-repeat,-70px,-60px);
+        top:29px;
+        left: 5px;
+    }
+    &>div{
+        width: 100px;
+        height: 123px;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #b3b3b3;
+        border-top: 0;
+        text-align: center;
+        left:-27px;
+        top:36px;
+        color: #C52321;
+        z-index: 100;
+    }
+     &>em,&>div{
+         display: none;
+         position: absolute;
+    }
+}
+.storehead-fastlink:hover{
+    cursor: pointer;
+    .shouchang>em,.shouchang>div{
+        display: block;
+    }
+}

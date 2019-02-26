@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	</head>
+    <body>
+    	<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main"></script>
+    	<div class="tophg"></div>
+    	<div class="cart" style="display: none;">
+    		<div class="wrapper">
+    			<div class="mycart" >
+    				<div class="cart-title">
+    					<h1>邮乐商品(<span>0</span>)</h1>
+    					<p><a href="#">我的收藏夹</a></p>
+    				</div>
+	    			<div class="cart-head">
+	    				<ul>
+	    					<li>
+	    						<input type="checkbox" class="chk-all"/>
+	    					</li>
+	    					<li>商品信息</li>
+	    					<li>单价</li>
+	    					<li>商品数量</li>
+	    					<li>价格合计</li>
+	    					<li>操作</li>
+	    				</ul>
+	    			</div>
+	    			<div class="cart-main">
+	    				<div class="prolist">
+	    					<div class="cart-store">
+		    					<ul>
+		    						<li><input type="checkbox" class="chk-store"/></li>
+		    						<li>
+		    							<a href="#">禾煜食品旗舰店</a>
+		    						</li>
+		    					</ul>
+		    				</div>
+		    				<div class="items-store">
+		    					<ul>
+		    						<li>
+		    							<input type="checkbox" name="" id="" value="" />
+		    						</li>
+		    						<li class="proinfo">
+		    							<a href="#">
+		    								<img src="http://pic.ule.com/pic/user_800106056/product/prd20171228/b1a1496f61334ecb_p800x800_m_m.jpg"/>
+		    							</a>
+		    							<a href="#">禾煜 小核桂圆500g/袋  福建特产  干桂圆</a>
+		    							<i></i>
+		    						</li>
+		    						<li class="proattr">
+		    							<p>颜色：<em>无颜色</em></p>
+		    							<p>规格：<em>500g</em></p>
+		    						</li>
+		    						<li class="proprice">
+		                                                                        ￥<em>9.90</em>
+		    						</li>
+		    						<li class="procount">
+		    							<span class="btn-sub"></span>
+		    							<input type="text" value="1"/>
+		    							<span class="btn-add"></span>
+		    						</li>
+		    						<li class="prototal">
+		    							￥<em>19.80</em>
+		    						</li>
+		    						<li class="proaction">
+		    							<p>收藏</p>
+		    							<p class="del">删除</p>
+		    						</li>
+		    					</ul>
+		    				</div>
+	    				</div>
+	    			
+	    			</div>
+	    			<div class="cart-foot">
+	    				<span><input type="checkbox" class="chk-all"/>全选</span>
+	    				<a href="#" class="pldel">批量删除</a>
+	    				<a href="#" class="alldel">清空购物车</a>
+	    			</div>
+    			</div>
+    		</div>
+    		<div class="mycart-bar">
+    			<div class="wrapper">
+    				<dl>
+    					<dt>商品数量：</dt>
+    					<dd><em>0</em>件</dd>
+    				</dl>
+    				<dl>
+    					<dt>价格合计：</dt>
+    					<dd>￥<em>0.00</em></dd>
+    				</dl>
+    				<dl>
+    					<dt>促销抵扣：</dt>
+    					<dd>-￥<em>0.00</em></dd>
+    				</dl>
+    				<dl class="pro-allprice">
+    					<dt>商品总价：<br />不含运费</dt>
+    					<dd>￥<em>0.00</em></dd>
+    				</dl>
+    				<p>
+    					<a href="#" class="btn-continue">继续购物</a>
+    					<a href="#" class="btn-ordernow">去结账</a>
+    				</p>
+    			</div>
+    	   </div>
+    	</div>
+    	<div class="cart empty-cart">
+    		<div class="mycart emmycart">
+    			<div class="cart-title">
+    				<h1>购物车</h1>
+    				<p><a href="#">我的收藏夹</a></p>
+    			</div>
+    			<div class="cart-empty">
+    				<p>您的购物车暂无商品,立即去挑选商品吧!</p>
+    				<span class="btn-ljlogin">立即登录</span>
+    				<a href="index.html">去购物>></a>
+    			</div>
+    		</div>
+    	</div>
+    	<footer></footer>
+    	<!--<script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#toph").load("tophead.html",function () {
+			     $(".head-shopcar").css("display","none");
+			    $(".head-serch").css("display","none");
+			    $(".head-cart").css("display","block");
+			     $(".wrapper").css("width","950px");
+			});
+			$("footer").load("footer.html",function () {
+				$(".wrapper").css("width","950px");
+			});
+			
+		</script>-->
+    </body>
+</html>

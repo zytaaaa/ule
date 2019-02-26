@@ -1,0 +1,25 @@
+//一些标签需要的样式
+body{
+    color: #666666;
+    font-family:"Tahoma,Arial,Verdana,Simsun";
+}
+a{
+    text-decoration: none;
+    color:#666666;
+}
+li{
+    list-style: none;
+}
+
+i,b,strong,em,h4{
+    font-weight: normal;
+    font-style: normal;
+}
+
+$wraWidth:1200px;
+
+.wrapper{
+    width: $wraWidth;
+    margin: 0 auto;
+}
+

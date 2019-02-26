@@ -1,0 +1,6 @@
+//透明度
+
+@mixin opcity($n){
+    opacity: $n;
+    filter:alpha(opacity=$n*100);
+}
