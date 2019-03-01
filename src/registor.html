@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>用户注册-邮乐</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://i2.ulecdn.com/i/favicon.ico"/>
 	    <link rel="stylesheet" type="text/css" href="css/registor.css"/>
 	    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	</head>
@@ -16,35 +17,33 @@
 				</div>
 				<div class="reg-main">
 					<form action="#" method="post">
-						<div class="item"><lable>手机号码</lable><input type="text" placeholder="请输入您的手机号" /><span></span></div>
+						<div class="item phone"><lable>手机号码</lable><input type="text" placeholder="请输入您的手机号" autocomplete="off" id="phone" /><span></span></div>
 						<div class="item yzm">
 							<lable>验证码</lable>
-							<div class="code-input">
-								<input type="text" placeholder="请输入计算结果" name="phone" id="phone"/>
-							</div>
-							<div class="imgbtn">
-								<img src="https://pub.ule.com/validatecode/c48fcf0acdfac629/getCodeImage?key=18175a33067ec3910b1c3373a30b7bf7"/>
-							</div>
+							<input type="text" name="yzm" id="yzm" autocomplete="off" placeholder="请输入验证码"/>
+							<div class="imgbtn" style="font-size:24px; font-style: oblique;color: #00458A;">1234</div>
 							<span></span>
 						</div>
-						<div class="item">
+						<div class="item mima">
 							<lable>设置密码</lable>
-							<input type="text" id="password" placeholder="请设置6-20位字符的密码"  />
+							<input type="password" id="password" placeholder="请设置6-20位字符的密码" autocomplete="off"/>
 							<span></span>
 						</div>
-						<div class="item">
+						<div class="item qrmm">
 							<lable>确认密码</lable>
-							<input type="text" id="password" placeholder="再次输入密码" />
+							<input type="password" id="qrpassword" placeholder="再次输入密码" autocomplete="off"/>
 							<span></span>
 						</div>
-						<div class="item agree">
+						<div class="agree">
 							<lable></lable>
-							<i></i>
+							<!--<i></i>-->
+							<input type="checkbox" id="agre"/>
 							<span>
 								我接受<a href="#">《邮乐用户协议 》</a>
 							    <a href="#">《 隐私权政策》</a>及其相关的条款和条件
 							</span>
-						</div class="item">
+							<p style="display: none;">抱歉，您必须同意邮乐网的服务条款后才能提交注册。</p>
+						</div>
 						<div class="item reg-btn">
 							<lable></lable>
 							<a href="javascript:;"></a>

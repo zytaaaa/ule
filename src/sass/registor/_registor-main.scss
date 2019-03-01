@@ -49,7 +49,7 @@
             height: 40px;
             float: left;
         }
-        input{
+        input[type="text"],input[type="password"]{
             width: 298px;
             height: 38px;
             line-height: 38px;
@@ -57,10 +57,12 @@
             border: 1px solid #cacaca;
             color: #333;
             font-size: 14px;
+            float: left;
        }
-   }
+    }
+    
 }
-
+.regis .reg-main .yzm input{width: 140px;}
 
 .yzm{
     label,.code-input,.imgbtn,span{
@@ -69,7 +71,6 @@
     .code-input>input{
         width: 140px;
         @include ellipsis();
-        background: #eee;
     }
     .imgbtn{
         margin-left: 18px;
@@ -83,22 +84,34 @@
 }
 .agree{
     position: relative;
-    i{
-        display: inline-block;
-        height: 14px;
-        width: 14px;
-        cursor: pointer;
-        @include bgimgurl("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg",no-repeat,-115px,-339px);
-        vertical-align: top;
-        margin-right: 5px;
-    }
+    margin:20px 0px 10px;
+//  i{
+//      display: inline-block;
+//      height: 14px;
+//      width: 14px;
+//      cursor: pointer;
+//      @include bgimgurl("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg",no-repeat,-115px,-339px);
+//      vertical-align: top;
+//      margin-right: 5px;
+//  }
     span{
         position:absolute;
-        top: -13px;
+        top: -2px;
        color: #AEAEAE;
        a{
            color: #03c;
        } 
+    }
+    p{
+        position: absolute;
+        top:3px;
+        left: 400px;
+        line-height: 28px;
+        background: url("https://i0.ulecdn.com/i/login/2016/0808/policybg.gif");
+        width: 299px;
+        color: #A51C14;
+        padding-left: 10px;
+        font-size: 12px;
     }
     
 }
@@ -106,8 +119,32 @@
 .reg-btn{
     a{
         display: inline-block;
-        @include bgimgurl("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg",no-repeat,0,-141px);
+        @include bgimgurl("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg",no-repeat,0,-196px);
         height: 40px;
         width: 350px;
     }
+}
+
+.item span{
+    float: left;
+    line-height:40px;
+    padding-left: 20px;
+    width: 275px;
+    margin-left: 10px;
+    height: 40px;
+    font-size: 14px;
+}
+.item span.error{
+   color: #C52E15;
+   background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat 1000px 0px; 
+   background-position: -2px -64px;
+}
+.item span.conmit{
+    background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat 1000px 0px; 
+    background-position: -2px 7px;
+    color: #333; 
+}
+.item span.bingo{
+    background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat 1000px 0px; 
+    background-position: -2px -29px;
 }

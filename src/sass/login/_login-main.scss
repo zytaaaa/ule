@@ -37,6 +37,18 @@
     }
     .lg{
         position: relative;
+        span{
+            display:none;
+            float: left;
+            @include bgimgurl("https://i0.ulecdn.com/i/login/2015/0415/login_icons.png",no-repeat,0,-32px);
+            line-height:16px;
+            height: 16px;
+            text-indent: 20px;
+            width: 294px;
+            margin: 2px 0 4px 16px;
+            background-color: #fff;
+            color: #eb3937;
+        }
     }
     .lg-poe>i{
         @include bgimgurl("https://i0.ulecdn.com/i/login/2015/0415/login_icons.png",no-repeat,0,-85px);
@@ -178,4 +190,7 @@
         display: block;
         font-weight: 400;
     }
+}
+#login-btn{
+    cursor: pointer;
 }

@@ -16,7 +16,7 @@
 			<div class="wrapper">
 				<div class="storeHeadInfo">
 					<span class="line"></span>
-					<a href="#">汉源农特产专柜</a>
+					<a href="#" class="sdname"></a>
 					<span class="daxing">
 						<i></i>
 						<em>5</em>
@@ -75,31 +75,27 @@
 					<a href="#">首页</a><span>></span>
 					<a href="#">厨卫清洁</a><span>></span>
 					<a href="#">生活用纸</a><span>></span>
-					<a href="#">软包装抽取式面纸</a><span>>唯一缘点原浆本色抽纸8包加厚4层  卫生纸巾餐巾纸面巾纸</span>
+					<a href="#">软包装抽取式面纸</a><span class="midname"></span>
 				</div>
 				<div class="goods-main">
 					<div class="fdj">
 						<div class="spic">
 							<a href="#">
-								<img src="http://pic.ulecdn.com/pic/user_800116330/product/prd20181230/d3f47528f63716ee_p800x800_xl.jpg" alt="">
+								<img src="" alt="" class="smallpic">
 							    <div class="sf"></div>
 							</a>
 						</div>
 						<!--滑过显示放大镜-->
 						<div class="bf">
-							<img src="http://pic.ulecdn.com/pic/user_800116330/product/prd20181230/d3f47528f63716ee_p800x800_y.jpg" alt="" id="bpic">
+							<img src="" alt="" id="bpic">
 						</div>
 						<div class="ulist">
 							<ul>
-								<li><img src="http://pic.ulecdn.com/pic/user_800116330/product/prd20181230/d3f47528f63716ee_p800x800_m.jpg" alt=""></li>
-								<li><img src="http://pic.ulecdn.com/pic/user_800116330/product/prd20181230/f892df115378ef8f_p800x800_m.jpg" alt=""></li>
-								<li><img src="http://pic.ulecdn.com/pic/user_800116330/product/prd20181230/9b7c72d14afe0d9c_p800x800_m.jpg" alt=""></li>
-								<li><img src="http://pic.ulecdn.com/pic/user_800116330/product/prd20181230/144891a930fa5b2c_p800x800_m.jpg" alt=""></li>
 							</ul>
 						</div>
 					</div>
 				    <div class="proInfo">
-				    	<h1>惟一 缘点原浆本色抽纸8包加厚4层 卫生纸巾餐巾纸面巾纸</h1>
+				    	<h1></h1>
 				    	<h2>原生浆本色纸，天然抑菌，不含荧光剂，柔韧亲肤，环保更健康~</h2>
 				        <div class="prodetail">
 				            <dl class="proid">
@@ -110,7 +106,7 @@
 				            	<dt>价格</dt>
 				            	<dd>
 				            		<span>￥</span>
-				            		<strong>9.90</strong>
+				            		<strong></strong>
 				            		<del>28.00</del>
 				            		<i>
 				            		   <!--划过出现-->
@@ -145,16 +141,15 @@
 					           		<ul>
 					           			<!--点击那个规格就出现sub标签，默认第一个选选中-->
 					           			<li><a href="#">8包<sub>选中</sub></a></li>
-					           			<li><a href="#">16包</a></li>
 					           		</ul>
 					           	</dd>
 				           </dl>
 				           <dl class="num">
 					           	<dt>数量</dt>
-					           	<dd>
-					           		<span class="prosub">-</span>
+					           	<dd class="procount">
+					           		<span class="prosub sub">-</span>
 					           		<input type="text" value="1" id="pCount" class="pCount"/>
-					           		<span class="proadd">+</span>
+					           		<span class="proadd add">+</span>
 					           		<span class="kucun">(库存9164件)</span>
 					           	</dd>
 				           </dl>
@@ -168,7 +163,7 @@
 				        </div>
 				        <div class="purchase">
 				        	<a href="#" class="btn_exchange">立即购买</a>
-				        	<a href="#" class="btn_add2cart">加入购物车</a>
+				        	<a href="javascript:;" class="btn_add2cart">加入购物车</a>
 				        	<a href="#" class="bth-col">收藏</a>
 				        </div>
 				        <div class="goods_bottom">
@@ -180,15 +175,26 @@
 			</div>
 		</div>
 		<footer></footer>
-		<!--<script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$("#toph").load("tophead.html",function () {
-				$(".head-shopcar").css("display","none");
-				$(".head-serch").css("margin-right","0");
-				$(".head-serch p a").css("color","#666666");
-			});
-			$("footer").load("footer.html");
-		</script>-->
+		<!--隔挡层-->
+		<div id="util-overlayer"></div>
+		<!--弹窗-->
+		<div id="util-dialog">
+			<div class="pdb-title">
+				<h4>加入购物车</h4>
+				<span class="close">关闭</span>
+			</div>
+			<div id="pdb-content">
+				<div class="msg-success">
+					<p class="f14">该商品已成功加入购物车</p>
+					<p class="mt10"></p>
+				    <p class="m5">金额 ￥<strong></strong></p>
+				</div>
+			</div>
+			<div id="pdb-bottom">
+				<p><a href="cart.html">查看购物车</a>
+				<a href="javascript:;" class="continue">继续购物</a></p>
+			</div>
+		</div>
 	</body>
 
 </html>

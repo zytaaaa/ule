@@ -3,15 +3,16 @@
     <head>
 		<meta charset="UTF-8">
 		<title>购物车</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://i2.ulecdn.com/i/favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	</head>
     <body>
     	<script src="script/thirdplugins/require.js" defer async="true" data-main="script/js/main"></script>
     	<div class="tophg"></div>
-    	<div class="cart" style="display: none;">
+    	<div class="cart gouwu" style="display: none;">
     		<div class="wrapper">
-    			<div class="mycart" >
+    			<div class="mycart">
     				<div class="cart-title">
     					<h1>邮乐商品(<span>0</span>)</h1>
     					<p><a href="#">我的收藏夹</a></p>
@@ -29,25 +30,25 @@
 	    				</ul>
 	    			</div>
 	    			<div class="cart-main">
-	    				<div class="prolist">
+	    				<div class="prolist" style="display: none;">
 	    					<div class="cart-store">
 		    					<ul>
 		    						<li><input type="checkbox" class="chk-store"/></li>
-		    						<li>
-		    							<a href="#">禾煜食品旗舰店</a>
+		    						<li class="dnama">
+		    							<a href="#"></a>
 		    						</li>
 		    					</ul>
 		    				</div>
 		    				<div class="items-store">
 		    					<ul>
 		    						<li>
-		    							<input type="checkbox" name="" id="" value="" />
+		    							<input type="checkbox" class="onlyshop"/>
 		    						</li>
 		    						<li class="proinfo">
-		    							<a href="#">
-		    								<img src="http://pic.ule.com/pic/user_800106056/product/prd20171228/b1a1496f61334ecb_p800x800_m_m.jpg"/>
+		    							<a href="#" class="proimg">
+		    								<img src=""/>
 		    							</a>
-		    							<a href="#">禾煜 小核桂圆500g/袋  福建特产  干桂圆</a>
+		    							<a href="#" class="projs"></a>
 		    							<i></i>
 		    						</li>
 		    						<li class="proattr">
@@ -55,15 +56,15 @@
 		    							<p>规格：<em>500g</em></p>
 		    						</li>
 		    						<li class="proprice">
-		                                                                        ￥<em>9.90</em>
+		                                                                                 ￥<em></em>
 		    						</li>
 		    						<li class="procount">
 		    							<span class="btn-sub"></span>
-		    							<input type="text" value="1"/>
+		    							<input type="text" value="1" class="pCount"/>
 		    							<span class="btn-add"></span>
 		    						</li>
 		    						<li class="prototal">
-		    							￥<em>19.80</em>
+		    							￥<em></em>
 		    						</li>
 		    						<li class="proaction">
 		    							<p>收藏</p>
@@ -76,18 +77,18 @@
 	    			</div>
 	    			<div class="cart-foot">
 	    				<span><input type="checkbox" class="chk-all"/>全选</span>
-	    				<a href="#" class="pldel">批量删除</a>
-	    				<a href="#" class="alldel">清空购物车</a>
+	    				<a href="javascript:;" class="pldel">批量删除</a>
+	    				<a href="javascript:;" class="alldel">清空购物车</a>
 	    			</div>
     			</div>
     		</div>
     		<div class="mycart-bar">
     			<div class="wrapper">
-    				<dl>
+    				<dl class="allnum">
     					<dt>商品数量：</dt>
     					<dd><em>0</em>件</dd>
     				</dl>
-    				<dl>
+    				<dl class="pro-allprice">
     					<dt>价格合计：</dt>
     					<dd>￥<em>0.00</em></dd>
     				</dl>
@@ -100,8 +101,8 @@
     					<dd>￥<em>0.00</em></dd>
     				</dl>
     				<p>
-    					<a href="#" class="btn-continue">继续购物</a>
-    					<a href="#" class="btn-ordernow">去结账</a>
+    					<a href="javascript:;" class="btn-continue">继续购物</a>
+    					<a href="javascript:;" class="btn-ordernow">去结账</a>
     				</p>
     			</div>
     	   </div>
@@ -120,18 +121,24 @@
     		</div>
     	</div>
     	<footer></footer>
-    	<!--<script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$("#toph").load("tophead.html",function () {
-			     $(".head-shopcar").css("display","none");
-			    $(".head-serch").css("display","none");
-			    $(".head-cart").css("display","block");
-			     $(".wrapper").css("width","950px");
-			});
-			$("footer").load("footer.html",function () {
-				$(".wrapper").css("width","950px");
-			});
-			
-		</script>-->
+    	<!--隔挡层-->
+		<div id="util-overlayer"></div>
+		<!--弹窗-->
+		<div id="util-dialog" style="width: 350px;height: 131px;left:50%; top:50%;margin-left: -170px;margin-top:-90px;">
+			<div class="pdb-title">
+				<h4>确认提示</h4>
+				<span class="close">关闭</span>
+			</div>
+			<div id="pdb-content" style="background-image: none;padding: 0;" >
+				<div class="msg-success" style="background: url(http://i1.ulecdn.com/j/jend/util/dialog/images/ico_confirm_32.png) no-repeat 30px 15px;padding: 20px 20px 20px 70px">
+					<p class="f14" style="font-weight: normal;font-size: 14px;color: #666;"></p>
+				</div>
+			</div>
+			<div id="pdb-bottom" style="padding: 10px 10px 0px 0px; background: url(http://i1.ulecdn.com/j/jend/util/dialog/images/dialog_bg_bottom.gif) repeat-x;overflow: hidden;">
+				<p><a href="javascript:;" style="width: 40px; font-size: 12px;line-height: 23px;height: 23px;margin-right: 5px;    border: 1px solid #fff;">确认</a>
+				<a href="javascript:;" class="continue" style="width:40px;font-size: 12px;line-height: 23px;height: 23px;border: 1px solid #fff;">关闭</a></p>
+			</div>
+		</div>
+    	
     </body>
 </html>

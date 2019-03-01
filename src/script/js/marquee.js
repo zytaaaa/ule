@@ -1,5 +1,6 @@
 define(["config"], function() {
 	require(["jquery"], function() {
+		/*无缝切换*/
 		(function() {
 			$.fn.extend({
 				tab: function(options) {
@@ -38,6 +39,37 @@ define(["config"], function() {
 					})
 				}
 			})
+		})();
+		
+		/*商品增加减少*/
+		(function () {
+			var $shul=$(".pCount").val();
+		    var $num=$shul;
+		    $(".sub").on("click",function () {
+		    	$num--;
+		    	if($num<1){
+		    		$num=1;
+		    		$(this).css("background-color","rgb(241, 241, 241)");
+		    	}
+		    	$(".add").css("background-color","rgb(255, 255, 255)");
+		    	$(".pCount").val($num);
+		    })	
+		    $(".add").on("click",function () {
+		    	$num++;
+		    	if($num>99){
+		    		$num=99;
+		    		$(this).css("background-color","rgb(241, 241, 241)");
+		    	}
+		    	$(".sub").css("background-color","rgb(255, 255, 255)");
+		    	$(".pCount").val($num);
+		    })
+		    $(".pCount").on("focus",function () {
+		    	$(this).css("border","1px solid #00BBEE");
+		    })
+		    $(".pCount").on("blur",function () {
+		    	$(this).css("border","1px solid #999");
+		    })
+		    
 		})();
 	})
 })

@@ -127,6 +127,48 @@ define(["config","marquee"], function() {
 			  	$("img.lazy").lazyload({
 				effect: "fadeIn"
 			})
-		  })
+		  });
+		
+		//放大镜
+		$('.spic .sf').width($('.spic').width()*$('.bf').width()/$('#bpic').width());
+		$('.spic .sf').height($('.spic').height()*$('.bf').height()/$('#bpic').height());
+	    var $bili=$("#bpic").width()/$(".spic").width();
+	   $(".spic").on("mouseenter",function () {
+	    	$(".bf").css("visibility","visible");
+	    	$(this).css("cursor","crosshair");/*让鼠标变成十字架型*/
+            $(this).on("mousemove",function (ev) {
+            	var $left=ev.clientX;
+            	var $top=ev.clientY;
+            	//console.log($left);
+            	//console.log($top);
+            	var $left=ev.pageX-$(".spic").offset().left-$(".sf").width()/2;
+                var $top=ev.pageY-$(".spic").offset().top-$(".sf").height()/2;
+                if($left<0){
+                	$left=0;
+                }else if($left>=$(".spic").width()-$(".sf").width()){
+                	$left=$('.spic').width()-$('.sf').width();
+                }
+                if($top<0){
+                	$top=0;
+                }else if($top>=$('.spic').height()-$('.sf').height()){
+                	$top=$('.spic').height()-$('.sf').height();
+                }
+                $(".sf").css("left",$left);
+                $(".sf").css("top",$top);
+                $("#bpic").css("left",-$left*$bili);
+                $("#bpic").css("top",-$top*$bili);
+            })
+	    })
+	    $(".spic").on("mouseleave",function () {
+	    	$(".bf").css("visibility","hidden");
+	    	$(this).css("cursor","default");
+	    })
+	    //点击小图切换
+	    $(".ulist ul").on("mouseover","li",function () {
+	    	$(this).find("img").addClass("active").end().siblings("li").find("img").removeClass("active");
+	    	var $imgurl=$(this).find("img").attr("src");
+	    	$('.smallpic').attr('src',$imgurl);
+			$('#bpic').attr('src',$imgurl);
+	    });
 	});
 });

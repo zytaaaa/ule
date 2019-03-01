@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>用户登录-邮乐</title>
+		<link rel="shortcut icon" type="image/x-icon" href="http://i2.ulecdn.com/i/favicon.ico"/>
 	    <link rel="stylesheet" type="text/css" href="css/login.css"/>
 	    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	</head>
@@ -16,13 +17,13 @@
 						<span class="lg-title">登录</span>
 						<div class="lg-poe lg">
 						    <i></i>
-						    <input type="text" id="" value="" placeholder="邮箱地址或手机号码"/>
+						    <input type="text" id="loginphone" placeholder="邮箱地址或手机号码"/>
 						    <span></span><!--显示提示信息-->
 						</div>
 						<div class="lg-pass lg">
 						    <i></i>
-						    <input type="password" id="password"  placeholder="密码"/>
-						    <span></span><!--显示提示信息-->	
+						    <input type="password" id="loginpassword"  placeholder="密码"/>
+						    <span></span>
 						</div>
 						<div class="lg-help">
 						   <input type="checkbox" id="autologin"/>
@@ -33,7 +34,7 @@
 						        <a href="#">忘记密码？</a>
 						    </span>
 						</div>
-						<input type="button" value="立即登录"/>
+						<input type="button" value="立即登录" id="login-btn"/>
 						<span class="noreg">
 							没有账号?<a href="registor.html">立即注册</a>
 						</span>	   
@@ -53,14 +54,5 @@
 			</div>
 		</div>
 		<footer></footer>
-		<!--<script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$("#toph").load("tophead.html",function () {
-			    $(".head-shopcar").css("display","none");
-			    $(".head-serch").css("display","none");
-			});
-			$("footer").load("footer.html");
-			
-		</script>-->
 	</body>
 </html>

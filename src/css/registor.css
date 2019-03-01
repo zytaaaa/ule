@@ -75,7 +75,7 @@ i, b, strong, em, h4 {
   height: 40px;
   float: left;
 }
-.reg-main form > div input {
+.reg-main form > div input[type="text"], .reg-main form > div input[type="password"] {
   width: 298px;
   height: 38px;
   line-height: 38px;
@@ -83,6 +83,11 @@ i, b, strong, em, h4 {
   border: 1px solid #cacaca;
   color: #333;
   font-size: 14px;
+  float: left;
+}
+
+.regis .reg-main .yzm input {
+  width: 140px;
 }
 
 .yzm label, .yzm .code-input, .yzm .imgbtn, .yzm span {
@@ -93,7 +98,6 @@ i, b, strong, em, h4 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: #eee;
 }
 .yzm .imgbtn {
   margin-left: 18px;
@@ -107,30 +111,60 @@ i, b, strong, em, h4 {
 
 .agree {
   position: relative;
-}
-.agree i {
-  display: inline-block;
-  height: 14px;
-  width: 14px;
-  cursor: pointer;
-  background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat -115px -339px;
-  vertical-align: top;
-  margin-right: 5px;
+  margin: 20px 0px 10px;
 }
 .agree span {
   position: absolute;
-  top: -13px;
+  top: -2px;
   color: #AEAEAE;
 }
 .agree span a {
   color: #03c;
 }
+.agree p {
+  position: absolute;
+  top: 3px;
+  left: 400px;
+  line-height: 28px;
+  background: url("https://i0.ulecdn.com/i/login/2016/0808/policybg.gif");
+  width: 299px;
+  color: #A51C14;
+  padding-left: 10px;
+  font-size: 12px;
+}
 
 .reg-btn a {
   display: inline-block;
-  background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat 0 -141px;
+  background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat 0 -196px;
   height: 40px;
   width: 350px;
+}
+
+.item span {
+  float: left;
+  line-height: 40px;
+  padding-left: 20px;
+  width: 275px;
+  margin-left: 10px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.item span.error {
+  color: #C52E15;
+  background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat 1000px 0px;
+  background-position: -2px -64px;
+}
+
+.item span.conmit {
+  background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat 1000px 0px;
+  background-position: -2px 7px;
+  color: #333;
+}
+
+.item span.bingo {
+  background: url("https://i0.ulecdn.com/i/login/2016/0808/icon.jpg") no-repeat 1000px 0px;
+  background-position: -2px -29px;
 }
 
 #top {
@@ -541,6 +575,7 @@ header:after {
 }
 
 .searchconten {
+  z-index: 20;
   width: 458px;
   position: absolute;
   top: 36px;
@@ -639,6 +674,18 @@ header:after {
 }
 .login-box .lg {
   position: relative;
+}
+.login-box .lg span {
+  display: none;
+  float: left;
+  background: url("https://i0.ulecdn.com/i/login/2015/0415/login_icons.png") no-repeat 0 -32px;
+  line-height: 16px;
+  height: 16px;
+  text-indent: 20px;
+  width: 294px;
+  margin: 2px 0 4px 16px;
+  background-color: #fff;
+  color: #eb3937;
 }
 .login-box .lg-poe > i {
   background: url("https://i0.ulecdn.com/i/login/2015/0415/login_icons.png") no-repeat 0 -85px;
@@ -783,6 +830,10 @@ header:after {
   text-align: center;
   display: block;
   font-weight: 400;
+}
+
+#login-btn {
+  cursor: pointer;
 }
 
 footer {
